@@ -1,0 +1,41 @@
+------ Build started: Project: OLED_TESTING_1.0, Configuration: Debug ARM ------
+Build started.
+Project "OLED_TESTING_1.0.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files\Atmel\Studio\7.0\Vs\Compiler.targets" from project "C:\Users\William\Documents\Atmel Studio\7.0\OLED_TESTING_1.0\OLED_TESTING_1.0\OLED_TESTING_1.0.cproj" (target "Build" depends on it):
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files\Atmel\Studio\7.0\shellUtils
+		C:\Program Files\Atmel\Studio\7.0\shellUtils\make.exe all --jobs 4 --output-sync 
+		../src/qs_i2c_master_basic_use.c: In function 'main':
+C:\Users\William\Documents\Atmel Studio\7.0\OLED_TESTING_1.0\OLED_TESTING_1.0\src\qs_i2c_master_basic_use.c(72,10): warning: unused variable 'adc_lsb' [-Wunused-variable]
+		 uint16_t adc_lsb=0;
+		          ^
+		Building file: ../src/qs_i2c_master_basic_use.c
+		Invoking: ARM/GNU C Compiler : 5.3.1
+		"C:\Program Files\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe"  -x c -mthumb -D__SAMDA1J16A__ -DBOARD=SAMDA1_XPLAINED_PRO -D__SAMDA1J16A__ -DARM_MATH_CM0PLUS=true -DI2C_MASTER_CALLBACK_MODE=false -DDEBUG  -I"../src/ASF/sam0/boards" -I"../src/ASF/sam0/boards/samda1_xplained_pro" -I"../src/ASF/sam0/utils/cmsis/samda1/source" -I"../src/ASF/sam0/utils/cmsis/samda1/include" -I"../src/ASF/sam0/utils" -I"../src/ASF/sam0/utils/header_files" -I"../src/ASF/sam0/utils/preprocessor" -I"../src/ASF/thirdparty/CMSIS/Include" -I"../src/ASF/thirdparty/CMSIS/Lib/GCC" -I"../src/ASF/common/utils" -I"../src/ASF/common/boards" -I"../src/ASF/sam0/drivers/port" -I"../src/ASF/sam0/drivers/system/pinmux" -I"../src/ASF/sam0/drivers/sercom/i2c" -I"../src/ASF/sam0/drivers/sercom" -I"../src/ASF/sam0/drivers/system" -I"../src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da" -I"../src/ASF/sam0/drivers/system/clock" -I"../src/ASF/sam0/drivers/system/interrupt" -I"../src/ASF/sam0/drivers/system/interrupt/system_interrupt_samda" -I"../src/ASF/sam0/drivers/system/power" -I"../src/ASF/sam0/drivers/system/power/power_sam_d_r" -I"../src/ASF/sam0/drivers/system/reset" -I"../src/ASF/sam0/drivers/system/reset/reset_sam_d_r" -I"../src" -I"../src/config"  -O0 -fdata-sections -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -pipe -fno-strict-aliasing -Wall -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -std=gnu99 -ffunction-sections -fdata-sections -Wchar-subscripts -Wcomment -Wformat=2 -Wimplicit-int -Wmain -Wparentheses -Wsequence-point -Wreturn-type -Wswitch -Wtrigraphs -Wunused -Wuninitialized -Wunknown-pragmas -Wfloat-equal -Wundef -Wshadow -Wbad-function-cast -Wwrite-strings -Wsign-compare -Waggregate-return  -Wmissing-declarations -Wformat -Wmissing-format-attribute -Wno-deprecated-declarations -Wpacked -Wredundant-decls -Wnested-externs -Wlong-long -Wunreachable-code -Wcast-align --param max-inline-insns-single=500 -MD -MP -MF "src/qs_i2c_master_basic_use.d" -MT"src/qs_i2c_master_basic_use.d" -MT"src/qs_i2c_master_basic_use.o"   -o "src/qs_i2c_master_basic_use.o" "../src/qs_i2c_master_basic_use.c" 
+		Finished building: ../src/qs_i2c_master_basic_use.c
+		Building target: OLED_TESTING_1.0.elf
+		Invoking: ARM/GNU Linker : 5.3.1
+		"C:\Program Files\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-gcc.exe" -o OLED_TESTING_1.0.elf  src/oled_gfx.o src/ASF/common/utils/interrupt/interrupt_sam_nvic.o src/ASF/sam0/boards/samda1_xplained_pro/board_init.o src/ASF/sam0/drivers/port/port.o src/ASF/sam0/drivers/sercom/i2c/i2c_sam0/i2c_master.o src/ASF/sam0/drivers/sercom/sercom.o src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da/clock.o src/ASF/sam0/drivers/system/clock/clock_samd21_r21_da/gclk.o src/ASF/sam0/drivers/system/interrupt/system_interrupt.o src/ASF/sam0/drivers/system/pinmux/pinmux.o src/ASF/sam0/drivers/system/system.o src/ASF/sam0/utils/cmsis/samda1/source/gcc/startup_samda1.o src/ASF/sam0/utils/cmsis/samda1/source/system_samda1.o src/ASF/sam0/utils/syscalls/gcc/syscalls.o src/qs_i2c_master_basic_use.o   -mthumb -Wl,-Map="OLED_TESTING_1.0.map" --specs=nano.specs -Wl,--start-group -larm_cortexM0l_math -lm  -Wl,--end-group -L"../src/ASF/thirdparty/CMSIS/Lib/GCC" -L"C:\Users\William\Documents\Atmel Studio\7.0\OLED_TESTING_1.0\OLED_TESTING_1.0\src"  -Wl,--gc-sections -mcpu=cortex-m0plus -Wl,--entry=Reset_Handler -Wl,--cref -mthumb -T../src/ASF/sam0/utils/linker_scripts/samda1/gcc/samda1j16a_flash.ld  
+		Finished building target: OLED_TESTING_1.0.elf
+		"C:\Program Files\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O binary "OLED_TESTING_1.0.elf" "OLED_TESTING_1.0.bin"
+		"C:\Program Files\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature  "OLED_TESTING_1.0.elf" "OLED_TESTING_1.0.hex"
+		"C:\Program Files\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -j .eeprom --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0 --no-change-warnings -O binary "OLED_TESTING_1.0.elf" "OLED_TESTING_1.0.eep" || exit 0
+		"C:\Program Files\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objdump.exe" -h -S "OLED_TESTING_1.0.elf" > "OLED_TESTING_1.0.lss"
+		"C:\Program Files\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature  "OLED_TESTING_1.0.elf" "OLED_TESTING_1.0.srec"
+		"C:\Program Files\Atmel\Studio\7.0\toolchain\arm\arm-gnu-toolchain\bin\arm-none-eabi-size.exe" "OLED_TESTING_1.0.elf"
+		   text	   data	    bss	    dec	    hex	filename
+		  25308	     32	   3800	  29140	   71d4	OLED_TESTING_1.0.elf
+	Done executing task "RunCompilerTask".
+	Task "RunOutputFileVerifyTask"
+		
+		Display Output File Size Skipped due to : Input string was not in a correct format.
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "OLED_TESTING_1.0.cproj".
+Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '') was evaluated as ('' != '').
+Target "Build" in file "C:\Program Files\Atmel\Studio\7.0\Vs\Avr.common.targets" from project "C:\Users\William\Documents\Atmel Studio\7.0\OLED_TESTING_1.0\OLED_TESTING_1.0\OLED_TESTING_1.0.cproj" (entry point):
+Done building target "Build" in project "OLED_TESTING_1.0.cproj".
+Done building project "OLED_TESTING_1.0.cproj".
+
+Build succeeded.
+========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========

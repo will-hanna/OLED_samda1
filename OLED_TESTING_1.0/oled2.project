@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="oled2" Version="10.0.0" InternalType="Console">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
+  </Plugins>
+  <VirtualDirectory Name="ASF">
+    <VirtualDirectory Name="thirdparty">
+      <VirtualDirectory Name="CMSIS">
+        <VirtualDirectory Name="Include">
+          <File Name="ASF/thirdparty/CMSIS/Include/arm_math.h"/>
+          <File Name="ASF/thirdparty/CMSIS/Include/core_cm0plus.h"/>
+          <File Name="ASF/thirdparty/CMSIS/Include/core_cmInstr.h"/>
+          <File Name="ASF/thirdparty/CMSIS/Include/core_cmFunc.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="sam0">
+      <VirtualDirectory Name="drivers">
+        <VirtualDirectory Name="port">
+          <VirtualDirectory Name="quick_start">
+            <File Name="ASF/sam0/drivers/port/quick_start/qs_port_basic.h"/>
+          </VirtualDirectory>
+          <File Name="ASF/sam0/drivers/port/port.c"/>
+          <File Name="ASF/sam0/drivers/port/port.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="sercom">
+          <VirtualDirectory Name="i2c">
+            <VirtualDirectory Name="i2c_sam0">
+              <File Name="ASF/sam0/drivers/sercom/i2c/i2c_sam0/i2c_master.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="quick_start_master_dma">
+              <File Name="ASF/sam0/drivers/sercom/i2c/quick_start_master_dma/qs_i2c_master_dma.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="quick_start_master">
+              <File Name="ASF/sam0/drivers/sercom/i2c/quick_start_master/qs_i2c_master_basic_use.h"/>
+            </VirtualDirectory>
+            <File Name="ASF/sam0/drivers/sercom/i2c/i2c_common.h"/>
+            <File Name="ASF/sam0/drivers/sercom/i2c/i2c_master.h"/>
+          </VirtualDirectory>
+          <File Name="ASF/sam0/drivers/sercom/sercom.c"/>
+          <File Name="ASF/sam0/drivers/sercom/sercom_pinout.h"/>
+          <File Name="ASF/sam0/drivers/sercom/sercom.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="system">
+          <VirtualDirectory Name="pinmux">
+            <VirtualDirectory Name="quick_start">
+              <File Name="ASF/sam0/drivers/system/pinmux/quick_start/qs_pinmux_basic.h"/>
+            </VirtualDirectory>
+            <File Name="ASF/sam0/drivers/system/pinmux/pinmux.h"/>
+            <File Name="ASF/sam0/drivers/system/pinmux/pinmux.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="reset">
+            <VirtualDirectory Name="reset_sam_d_r">
+              <File Name="ASF/sam0/drivers/system/reset/reset_sam_d_r/reset.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="interrupt">
+            <VirtualDirectory Name="system_interrupt_samda">
+              <File Name="ASF/sam0/drivers/system/interrupt/system_interrupt_samda/system_interrupt_features.h"/>
+            </VirtualDirectory>
+            <File Name="ASF/sam0/drivers/system/interrupt/system_interrupt.h"/>
+            <File Name="ASF/sam0/drivers/system/interrupt/system_interrupt.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="clock">
+            <VirtualDirectory Name="clock_samd21_r21_da">
+              <File Name="ASF/sam0/drivers/system/clock/clock_samd21_r21_da/clock.c"/>
+              <File Name="ASF/sam0/drivers/system/clock/clock_samd21_r21_da/clock_feature.h"/>
+              <File Name="ASF/sam0/drivers/system/clock/clock_samd21_r21_da/clock_config_check.h"/>
+              <File Name="ASF/sam0/drivers/system/clock/clock_samd21_r21_da/gclk.c"/>
+            </VirtualDirectory>
+            <File Name="ASF/sam0/drivers/system/clock/gclk.h"/>
+            <File Name="ASF/sam0/drivers/system/clock/clock.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="power">
+            <VirtualDirectory Name="power_sam_d_r">
+              <File Name="ASF/sam0/drivers/system/power/power_sam_d_r/power.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <File Name="ASF/sam0/drivers/system/system.c"/>
+          <File Name="ASF/sam0/drivers/system/system.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="boards">
+        <VirtualDirectory Name="samda1_xplained_pro">
+          <File Name="ASF/sam0/boards/samda1_xplained_pro/board_init.c"/>
+          <File Name="ASF/sam0/boards/samda1_xplained_pro/samda1_xplained_pro.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="utils">
+        <VirtualDirectory Name="syscalls">
+          <VirtualDirectory Name="gcc">
+            <File Name="ASF/sam0/utils/syscalls/gcc/syscalls.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="cmsis">
+          <VirtualDirectory Name="samda1">
+            <VirtualDirectory Name="source">
+              <VirtualDirectory Name="gcc">
+                <File Name="ASF/sam0/utils/cmsis/samda1/source/gcc/startup_samda1.c"/>
+              </VirtualDirectory>
+              <File Name="ASF/sam0/utils/cmsis/samda1/source/system_samda1.h"/>
+              <File Name="ASF/sam0/utils/cmsis/samda1/source/system_samda1.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="include">
+              <VirtualDirectory Name="component">
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/eic.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/wdt.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/evsys.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/sysctrl.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/usb.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/i2s.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/tc.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/mtb.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/gclk.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/dmac.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/pac.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/dsu.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/adc.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/pm.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/nvmctrl.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/port.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/tcc.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/hmatrixb.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/ac.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/dac.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/sercom.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/component/rtc.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="pio">
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/pio/samda1j14a.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/pio/samda1g16a.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/pio/samda1g15a.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/pio/samda1e14a.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/pio/samda1e15a.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/pio/samda1j16a.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/pio/samda1j15a.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/pio/samda1e16a.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/pio/samda1g14a.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="instance">
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/eic.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/sercom2.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/wdt.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/sbmatrix.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/tc5.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/evsys.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/sysctrl.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/sercom4.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/usb.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/pac0.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/i2s.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/tcc0.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/tc3.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/tcc1.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/sercom5.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/mtb.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/gclk.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/dmac.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/dsu.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/tc7.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/adc.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/tcc2.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/pm.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/sercom0.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/sercom3.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/tc4.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/nvmctrl.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/port.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/pac1.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/pac2.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/ac.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/dac.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/sercom1.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/tc6.h"/>
+                <File Name="ASF/sam0/utils/cmsis/samda1/include/instance/rtc.h"/>
+              </VirtualDirectory>
+              <File Name="ASF/sam0/utils/cmsis/samda1/include/samda1j14a.h"/>
+              <File Name="ASF/sam0/utils/cmsis/samda1/include/samda1g16a.h"/>
+              <File Name="ASF/sam0/utils/cmsis/samda1/include/samda1g15a.h"/>
+              <File Name="ASF/sam0/utils/cmsis/samda1/include/samda1e14a.h"/>
+              <File Name="ASF/sam0/utils/cmsis/samda1/include/samda1e15a.h"/>
+              <File Name="ASF/sam0/utils/cmsis/samda1/include/samda1j16a.h"/>
+              <File Name="ASF/sam0/utils/cmsis/samda1/include/samda1j15a.h"/>
+              <File Name="ASF/sam0/utils/cmsis/samda1/include/samda1e16a.h"/>
+              <File Name="ASF/sam0/utils/cmsis/samda1/include/samda1g14a.h"/>
+              <File Name="ASF/sam0/utils/cmsis/samda1/include/samda1.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="header_files">
+          <File Name="ASF/sam0/utils/header_files/io.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="preprocessor">
+          <File Name="ASF/sam0/utils/preprocessor/stringz.h"/>
+          <File Name="ASF/sam0/utils/preprocessor/mrepeat.h"/>
+          <File Name="ASF/sam0/utils/preprocessor/preprocessor.h"/>
+          <File Name="ASF/sam0/utils/preprocessor/tpaste.h"/>
+          <File Name="ASF/sam0/utils/preprocessor/mrecursion.h"/>
+        </VirtualDirectory>
+        <File Name="ASF/sam0/utils/compiler.h"/>
+        <File Name="ASF/sam0/utils/status_codes.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="common">
+      <VirtualDirectory Name="utils">
+        <VirtualDirectory Name="interrupt">
+          <File Name="ASF/common/utils/interrupt/interrupt_sam_nvic.c"/>
+          <File Name="ASF/common/utils/interrupt/interrupt_sam_nvic.h"/>
+        </VirtualDirectory>
+        <File Name="ASF/common/utils/parts.h"/>
+        <File Name="ASF/common/utils/interrupt.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="boards">
+        <File Name="ASF/common/boards/board.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="oled_gfx.c"/>
+    <File Name="asf.h"/>
+    <File Name="oled_gfx.h"/>
+    <File Name="main.c"/>
+    <File Name="CFile1.c"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Debug">
+    <File Name="Debug/Makefile"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="config">
+    <File Name="config/conf_clocks.h"/>
+    <File Name="config/IncFile2.h"/>
+    <File Name="config/conf_board.h"/>
+    <File Name="config/IncFile1.h"/>
+  </VirtualDirectory>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu gcc" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;-O0;-Wall" C_Options="-x c -mthumb -DBOARD=SAMDA1_XPLAINED_PRO -D__SAMDA1J16A__ -DARM_MATH_CM0PLUS=true -DI2C_MASTER_CALLBACK_MODE=false -DDEBUG -O0 -fdata-sections -mlong-calls -g3 -Wall -mcpu=cortex-m0plus -c -pipe -fno-strict-aliasing -Wall -Wstrict-prototypes -Wmissing-prototypes -Werror-implicit-function-declaration -Wpointer-arith -std=gnu99 -ffunction-sections -fdata-sections -Wchar-subscripts -Wcomment -Wformat=2 -Wimplicit-int -Wmain -Wparentheses -Wsequence-point -Wreturn-type -Wswitch -Wtrigraphs -Wunused -Wuninitialized -Wunknown-pragmas -Wfloat-equal -Wundef -Wshadow -Wbad-function-cast -Wwrite-strings -Wsign-compare -Waggregate-return  -Wmissing-declarations -Wformat -Wmissing-format-attribute -Wno-deprecated-declarations -Wpacked -Wredundant-decls -Wnested-externs -Wlong-long -Wunreachable-code -Wcast-align --param max-inline-insns-single=500 -MD -MP -MF" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <IncludePath Value="&quot;/home/william/Desktop/samda1/OLED_TESTING_1.0/&quot;"/>
+        <IncludePath Value="ASF/sam0/boards"/>
+        <IncludePath Value="ASF/sam0/boards/samda1_xplained_pro"/>
+        <IncludePath Value="ASF/sam0/utils/cmsis/samda1/source"/>
+        <IncludePath Value="ASF/sam0/utils/cmsis/samda1/include"/>
+        <IncludePath Value="ASF/sam0/utils"/>
+        <IncludePath Value="ASF/sam0/utils/header_files"/>
+        <IncludePath Value="ASF/sam0/utils/preprocessor"/>
+        <IncludePath Value="ASF/thirdparty/CMSIS/Include"/>
+        <IncludePath Value="ASF/thirdparty/CMSIS/Lib/GCC"/>
+        <IncludePath Value="ASF/common/utils"/>
+        <IncludePath Value="ASF/common/boards"/>
+        <IncludePath Value="ASF/sam0/drivers/port"/>
+        <IncludePath Value="ASF/sam0/drivers/system/pinmux"/>
+        <IncludePath Value="ASF/sam0/drivers/sercom/i2c"/>
+        <IncludePath Value="ASF/sam0/drivers/sercom"/>
+        <IncludePath Value="ASF/sam0/drivers/system"/>
+        <IncludePath Value="ASF/sam0/drivers/system/clock/clock_samd21_r21_da"/>
+        <IncludePath Value="ASF/sam0/drivers/system/clock"/>
+        <IncludePath Value="ASF/sam0/drivers/system/interrupt"/>
+        <IncludePath Value="ASF/sam0/drivers/system/interrupt/system_interrupt_samda"/>
+        <IncludePath Value="ASF/sam0/drivers/system/power"/>
+        <IncludePath Value="ASF/sam0/drivers/system/power/power_sam_d_r"/>
+        <IncludePath Value="ASF/sam0/drivers/system/reset"/>
+        <IncludePath Value="ASF/sam0/drivers/system/reset/reset_sam_d_r"/>
+        <IncludePath Value="config"/>
+        <Preprocessor Value="__SAMDA1J16A__"/>
+      </Compiler>
+      <Linker Options="-mthumb -Wl,-Map=&quot;OLED_TESTING_1.0.map&quot; --specs=nano.specs -Wl,--start-group -larm_cortexM0l_math -lm  -Wl,--end-group -Wl,--gc-sections -mcpu=cortex-m0plus -Wl,--entry=Reset_Handler -Wl,--cref -mthumb -TASF/sam0/utils/linker_scripts/samda1/gcc/samda1j16a_flash.ld" Required="yes">
+        <LibraryPath Value="ASF/thirdparty/CMSIS/Lib/GCC"/>
+        <LibraryPath Value="."/>
+        <LibraryPath Value="ASF/sam0/utils/linker_scripts/samda1/gcc"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Debug" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="no" IsGUIProgram="yes" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="yes" RemoteHostName="localhost" RemoteHostPort="3333" DebuggerPath="../../../../../opt/arm-none-eabi/bin/arm-none-eabi-gdb" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild>
+        <Command Enabled="yes">/opt/arm-none-eabi/bin/arm-none-eabi-size $(IntermediateDirectory)/$(ProjectName)</Command>
+        <Command Enabled="yes">/opt/arm-none-eabi/bin/arm-none-eabi-objcopy -O binary $(IntermediateDirectory)/$(ProjectName) $(IntermediateDirectory)/$(ProjectName).bin</Command>
+        <Command Enabled="yes">/opt/arm-none-eabi/bin/arm-none-eabi-objdump -S $(IntermediateDirectory)/$(ProjectName) &gt; $(IntermediateDirectory)/$(ProjectName).asm</Command>
+      </PostBuild>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu gcc" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-O2;-Wall" C_Options="-O2;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="NDEBUG"/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Release" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>
